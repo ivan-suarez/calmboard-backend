@@ -3,7 +3,7 @@ FROM node:16
 WORKDIR /home
 #Install app dependencies
 
-COPY package*.json ./
+COPY package*.json server.js dbPosts.js ./
 
 RUN npm install
 
